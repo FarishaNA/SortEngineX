@@ -1,0 +1,39 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# PHP
+/vendor/
+/composer.lock
+
+# Node (if you use any frontend packages)
+node_modules/
+/npm-debug.log
+yarn-error.log
+
+# Logs and temp files
+*.log
+*.cache
+*.tmp
+*.swp
+
+# Environment files
+.env
+
+# IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Build/dist folders (if any)
+dist/
+build/
+
+# Uploaded files or user content (if you store uploads in a folder)
+uploads/
+
+# Backup files
+*.bak
+*.old
+*.backup
