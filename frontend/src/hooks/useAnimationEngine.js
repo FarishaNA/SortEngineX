@@ -3,9 +3,9 @@ import { useState, useRef } from 'react';
 export const useAnimationEngine = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
-  const [animationSpeed, setAnimationSpeed] = useState(50);
+  const [animationSpeed, setAnimationSpeed] = useState(800);
   const stopRef = useRef(false);
-  const speedRef = useRef(50);
+  const speedRef = useRef(800);
 
   // Update ref whenever speed changes
   const updateSpeed = (newSpeed) => {

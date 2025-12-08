@@ -22,7 +22,7 @@ const SortingVisualizer = () => {
   const { animate, stop, isAnimating, animationSpeed, setAnimationSpeed } = useAnimationEngine();
 
   const generateArray = () => {
-    const newArray = Array.from({ length: 20 }, () => Math.floor(Math.random() * 100) + 10);
+    const newArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 10);
     setArray(newArray);
     setComparing([]);
     setSwapping([]);

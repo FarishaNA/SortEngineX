@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import SortingVisualizer from './components/SortingVisualizer';
-import PathfindingVisualizer from './components/PathfindingVisualizer';
 
-const App = () => {
-  const [activeTab, setActiveTab] = useState('sorting');
-
+export default function App() {
   return (
     <div className="min-h-screen bg-gray-900">
-      <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
+      <Navbar />
       <div className="container mx-auto p-8">
-        {activeTab === 'sorting' ? <SortingVisualizer /> : <PathfindingVisualizer />}
+        <SortingVisualizer />
       </div>
     </div>
   );
-};
-
-export default App;
+}

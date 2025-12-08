@@ -59,8 +59,8 @@ const SortingControls = ({
         <Zap size={20} className="text-yellow-500" />
         <input
           type="range"
-          min="10"
-          max="200"
+          min="100"
+          max="2000"
           value={speed}
           onChange={(e) => onSpeedChange(Number(e.target.value))}
           className="flex-1"

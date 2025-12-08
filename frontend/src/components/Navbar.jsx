@@ -1,29 +1,15 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
-const Navbar = ({ activeTab, onTabChange }) => {
+const Navbar = () => {
   return (
-    <nav className="bg-gray-900 text-white p-4 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Algorithm Visualizer</h1>
-        <div className="flex gap-4">
-          <button
-            onClick={() => onTabChange('sorting')}
-            className={`px-4 py-2 rounded transition-colors ${
-              activeTab === 'sorting' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            Sorting
-          </button>
-          <button
-            onClick={() => onTabChange('pathfinding')}
-            className={`px-4 py-2 rounded transition-colors ${
-              activeTab === 'pathfinding' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            Pathfinding
-          </button>
-        </div>
-      </div>
+    <nav className="flex items-center gap-3 p-4 bg-gray-800">
+      <img 
+        src={logo} 
+        alt="logo" 
+        className="w-12 h-12 object-contain select-none"
+      />
+      <h1 className="text-white text-lg font-semibold">SortEngineX</h1>
     </nav>
   );
 };
