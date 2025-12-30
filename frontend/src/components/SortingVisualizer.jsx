@@ -20,11 +20,9 @@ const SortingVisualizer = () => {
 
   const { animate, stop, isAnimating, animationSpeed, setAnimationSpeed } =
     useAnimationEngine();
-
-  // INITIAL RANDOM ARRAY
-  const [array, setArray] = useState(() =>
-    Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 10)
-  );
+    
+  // Start with empty array
+  const [array, setArray] = useState([]);
 
   // Tracks whether user typed or random
   const [inputMode, setInputMode] = useState('random');
